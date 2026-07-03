@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kansas City — World Cup Quarterfinal Travel Guide</title>
+<title>WC Travels — Rahul's World Cup 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500;700;900&family=IBM+Plex+Mono:wght@400;500;600&family=Libre+Franklin:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
@@ -15,221 +15,82 @@
   --paper:#fdfcfa;
   --smoke:#6b645c;
   --line:#e5e0d8;
+  --navy:#002D72;
+  --peach:#CE1141;
 }
 *{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
 body{font-family:'Libre Franklin',sans-serif;background:var(--paper);color:var(--ink);line-height:1.6}
 .wrap{max-width:960px;margin:0 auto;padding:0 24px}
 
-.hero{background:var(--red);color:#fff;padding:56px 0 0}
+.hero{background:var(--ink);color:#fff;padding:72px 0 64px}
 .eyebrow{font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
-.hero h1{font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(56px,11vw,124px);line-height:.92;text-transform:uppercase;margin:14px 0 8px}
-.hero .sub{font-size:17px;max-width:560px;color:rgba(255,255,255,.85);margin-bottom:44px}
+.hero h1{font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(60px,12vw,132px);line-height:.92;text-transform:uppercase;margin:14px 0 10px}
+.hero .sub{font-size:17px;max-width:600px;color:rgba(255,255,255,.8)}
 
-.ticket{background:#fff;color:var(--ink);border-radius:14px 14px 0 0;padding:28px 32px;display:grid;grid-template-columns:1fr auto 1fr;gap:24px;align-items:center;position:relative;box-shadow:0 -8px 40px rgba(0,0,0,.18)}
-.ticket .team{text-align:center}
-.ticket .team .code{font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:56px;line-height:1}
-.ticket .team .lbl{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--smoke);margin-top:4px}
-.ticket .mid{text-align:center;border-left:2px dashed var(--line);border-right:2px dashed var(--line);padding:0 28px}
-.ticket .mid .vs{font-family:'Big Shoulders Display',sans-serif;font-weight:700;font-size:28px;color:var(--red)}
-.ticket .mid .match{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--smoke);letter-spacing:.1em}
-.ticketmeta{background:#fff;border-top:2px dashed var(--line);padding:18px 32px 24px;display:flex;flex-wrap:wrap;gap:12px 36px;font-family:'IBM Plex Mono',monospace;font-size:13px}
-.ticketmeta span b{color:var(--red);font-weight:600;display:block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:2px;color:var(--smoke)}
-.ticketmeta span{color:var(--ink)}
+section{padding:56px 0 72px}
+.trips{display:grid;gap:24px}
+a.trip{display:block;text-decoration:none;color:#fff;border-radius:14px;padding:32px;position:relative;overflow:hidden;transition:transform .15s ease,box-shadow .15s ease}
+a.trip:hover{transform:translateY(-3px);box-shadow:0 14px 40px rgba(0,0,0,.22)}
+.trip .num{position:absolute;right:24px;top:12px;font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:110px;line-height:1;opacity:.16}
+.trip .tag{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;background:var(--gold);color:var(--ink);padding:3px 9px;border-radius:4px;font-weight:600;margin-bottom:14px}
+.trip h2{font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:clamp(38px,7vw,60px);line-height:.95;text-transform:uppercase}
+.trip .meta{font-family:'IBM Plex Mono',monospace;font-size:13px;margin-top:10px;color:rgba(255,255,255,.85)}
+.trip .go{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;margin-top:18px;color:var(--gold);font-weight:600}
+.trip.philly{background:var(--navy)}
+.trip.kc{background:var(--red)}
+.trip.atl{background:#3d3a35;cursor:default}
+.trip.atl:hover{transform:none;box-shadow:none}
+.trip.atl .go{color:rgba(255,255,255,.5)}
 
-section{padding:64px 0 8px}
-h2{font-family:'Big Shoulders Display',sans-serif;font-weight:700;font-size:clamp(32px,5vw,44px);text-transform:uppercase;letter-spacing:.01em;margin-bottom:6px}
-h2::after{content:"";display:block;width:56px;height:5px;background:var(--gold);margin-top:10px}
-.lede{color:var(--smoke);max-width:640px;margin:16px 0 32px}
-
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin-bottom:24px}
-.card{border:1px solid var(--line);border-radius:10px;padding:22px;background:#fff}
-.card h3{font-family:'Big Shoulders Display',sans-serif;font-weight:700;font-size:22px;text-transform:uppercase;margin-bottom:8px}
-.card p{font-size:15px;color:#3d3a35}
-.card .tag{display:inline-block;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;background:var(--gold);color:var(--ink);padding:3px 8px;border-radius:4px;margin-bottom:12px;font-weight:600}
-.card.red{background:var(--red);border-color:var(--red);color:#fff}
-.card.red p{color:rgba(255,255,255,.88)}
-.card.red .tag{background:var(--gold)}
-
-.timeline{border-left:3px solid var(--red);margin:32px 0 24px 8px;padding-left:0}
-.stop{position:relative;padding:0 0 30px 32px}
-.stop::before{content:"";position:absolute;left:-9px;top:6px;width:15px;height:15px;border-radius:50%;background:var(--gold);border:3px solid var(--red)}
-.stop .t{font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:13px;color:var(--red);letter-spacing:.08em}
-.stop h4{font-family:'Big Shoulders Display',sans-serif;font-weight:700;font-size:21px;text-transform:uppercase;margin:2px 0 4px}
-.stop p{font-size:15px;color:#3d3a35;max-width:620px}
-
-.mapbox{border:1px solid var(--line);border-radius:10px;background:#fff;overflow:hidden;margin-bottom:24px}
-.mapbox svg{display:block;width:100%;height:auto}
-
-.factbar{background:var(--ink);color:#fff;margin-top:64px;padding:40px 0}
-.factbar .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:28px}
-.fact b{display:block;font-family:'Big Shoulders Display',sans-serif;font-weight:900;font-size:34px;color:var(--gold);line-height:1.1}
-.fact span{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.7)}
-
-footer{padding:36px 0 48px;font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--smoke)}
+footer{padding:0 0 48px;font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--smoke)}
 footer a{color:var(--red)}
-
-@media (max-width:640px){
-  .ticket{grid-template-columns:1fr;gap:10px}
-  .ticket .mid{border:none;border-top:2px dashed var(--line);border-bottom:2px dashed var(--line);padding:12px 0}
-}
-@media (prefers-reduced-motion:no-preference){
-  section{animation:rise .5s ease both}
-  @keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
-}
 </style>
 </head>
 <body>
 
 <header class="hero">
   <div class="wrap">
-    <div class="eyebrow">FIFA World Cup 26 · Knockout Stage · Travel Guide</div>
-    <h1>Kansas City<br>Quarterfinal</h1>
-    <p class="sub">One night, 76,416 fans, the loudest stadium on Earth. Everything you need for Match 100 at Arrowhead.</p>
-    <div class="ticket">
-      <div class="team"><div class="code">W95</div><div class="lbl">Winner · Match 95</div></div>
-      <div class="mid"><div class="vs">VS</div><div class="match">MATCH 100 · QF</div></div>
-      <div class="team"><div class="code">W96</div><div class="lbl">Winner · Match 96</div></div>
-    </div>
-    <div class="ticketmeta">
-      <span><b>Date</b>Sat, July 11, 2026</span>
-      <span><b>Kickoff</b>8:00 PM CT (9 PM ET)</span>
-      <span><b>Venue</b>Kansas City Stadium (GEHA Field at Arrowhead)</span>
-      <span><b>Address</b>1 Arrowhead Dr, Kansas City, MO 64129</span>
-    </div>
+    <div class="eyebrow">FIFA World Cup 26 · Knockout Stage</div>
+    <h1>WC Travels</h1>
+    <p class="sub">Three trips, three knockout matches. Everything booked, planned, and in one place.</p>
   </div>
 </header>
 
 <section>
   <div class="wrap">
-    <h2>Getting to KC</h2>
-    <p class="lede">Fly into Kansas City International (MCI) — the new single terminal opened in 2023 and it's an easy airport. Roughly 3h15m nonstop from the NYC area.</p>
-    <div class="cards">
-      <div class="card"><span class="tag">Fly</span><h3>MCI Airport</h3><p>Nonstops from EWR, LGA and JFK on United, Delta, American and Southwest. MCI sits ~25 min northwest of downtown; rideshare downtown runs about $35–50. Book early — quarterfinal weekend demand will be brutal.</p></div>
-      <div class="card"><span class="tag">Airport → City</span><h3>ConnectKC26</h3><p>KC2026's official transit program runs direct connections between the airport, downtown, the Fan Festival and the stadium during the tournament. Check kansascityfwc26.com for current routes and passes.</p></div>
-      <div class="card"><span class="tag">In Town</span><h3>KC Streetcar</h3><p>Completely free, runs the main downtown spine: River Market → Power &amp; Light → Union Station (Fan Fest) → Country Club Plaza on the extension. You won't need a car if you stay along this line.</p></div>
+    <div class="trips">
+
+      <a class="trip philly" href="philly.html">
+        <div class="num">89</div>
+        <span class="tag">Round of 16 · Jul 4–5</span>
+        <h2>Philadelphia</h2>
+        <div class="meta">Paraguay vs France · Sat Jul 4, 5 PM ET · Lincoln Financial Field<br>In: Amtrak Keystone 663 to Ardmore · Back: rental SUV to Queens</div>
+        <div class="go">View trip →</div>
+      </a>
+
+      <a class="trip kc" href="kansas-city.html">
+        <div class="num">100</div>
+        <span class="tag">Quarterfinal · Jul 11–13</span>
+        <h2>Kansas City</h2>
+        <div class="meta">W95 vs W96 · Sat Jul 11, 8 PM CT · Arrowhead Stadium<br>In: Southwest WN 576 · Back: Delta DL 370 · Airbnb near Crossroads</div>
+        <div class="go">View trip →</div>
+      </a>
+
+      <div class="trip atl">
+        <div class="num">102</div>
+        <span class="tag">Semifinal · Mid-July</span>
+        <h2>Atlanta</h2>
+        <div class="meta">Semifinal at Mercedes-Benz Stadium · plans TBD</div>
+        <div class="go">Planning in progress</div>
+      </div>
+
     </div>
   </div>
 </section>
-
-<section>
-  <div class="wrap">
-    <h2>Getting to Arrowhead</h2>
-    <p class="lede">The one thing to plan carefully: there is no rail to the stadium. Arrowhead sits in the Truman Sports Complex, ~15 min east of downtown off I-70.</p>
-    <div class="cards">
-      <div class="card red"><span class="tag">Best Option</span><h3>Stadium Direct Bus</h3><p>ConnectKC26 Stadium Direct shuttles run from downtown hubs straight to the gates on match day. Reserve a pass in advance — routes have been selling out during the group stage.</p></div>
-      <div class="card"><span class="tag">Rideshare</span><h3>Uber / Lyft</h3><p>Fine going in, painful coming out. Designated pickup zones are a long walk and surge pricing after a quarterfinal will be extreme. Consider dropping a pin at Kauffman Stadium side or walking out to Blue Ridge Cutoff.</p></div>
-      <div class="card"><span class="tag">Driving</span><h3>Pre-Booked Parking</h3><p>Parking must be pre-purchased — no cash lots on the day. Arrive 3+ hours early; I-70 eastbound will crawl from mid-afternoon. Tailgating culture is elite here, so early isn't a punishment.</p></div>
-    </div>
-    <h2 style="margin-top:48px">Parking Shortlist</h2>
-    <div class="cards">
-      <div class="card red"><span class="tag">Pick · $100</span><h3>CDD Lot</h3><p>9150 E 41st Terr — directly east of the stadium, ~0.6 mi / 12 min straight-shot walk after the final whistle. Staffed &amp; monitored through the match; east-side lots keep their northbound exit during road closures. Proceeds support disability programs.<br><a href="https://secure.qgiv.com/for/fifaworldcup2026parking/event/july11-quarterfinal/" style="color:var(--gold);font-weight:600">Book CDD lot →</a></p></div>
-      <div class="card"><span class="tag">Backup · $75</span><h3>KC Pickle Club</h3><p>9119 E 39th St — ~0.75 mi / 17 min walk, diagonal against crowd flow. $25 cheaper with a bar/restaurant for pre-game, but it closes 10 PM Saturdays, so nothing post-match unless they extend World Cup hours (816-381-2400).<br><a href="https://reserve.imclutch.com/world-cup-kc-pickle-club" style="color:var(--red);font-weight:600">Book Pickle Club →</a></p></div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <h2>Your Flights</h2>
-    <div class="cards">
-      <div class="card red"><span class="tag">Outbound · Sat Jul 11</span><h3>Southwest WN 576</h3><p>LGA 6:05 AM → MCI 8:05 AM (3h)<br>Confirmation: <b>AACENI</b> · Basic fare · $189.40<br>Seat assigned at check-in · 1 carry-on + personal item. Cancel ≥10 min before departure or funds are forfeited.</p></div>
-      <div class="card red"><span class="tag">Return · Mon Jul 13</span><h3>Delta DL 370</h3><p>MCI 6:05 AM → LGA 9:55 AM<br>Confirmation: <b>GF9LUC</b> · Main Classic · $249.40<br>Seat: pick on delta.com / Fly Delta app. Carry-on free, first checked bag $35.</p></div>
-      <div class="card"><span class="tag">Heads Up</span><h3>Early Departures</h3><p>Both flights leave at 6:05 AM. Outbound lands 7 hours before Airbnb check-in (3 PM) — plan a BBQ breakfast. Return means a ~4:30 AM Monday wake-up, well before the 11 AM checkout.</p></div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <h2>Your Stay</h2>
-    <p class="lede">Booked: private king room in a Crossroads-adjacent house on the Westside — 10 min to the Fan Fest, on the good side of town for match weekend.</p>
-    <div class="cards">
-      <div class="card red"><span class="tag">Confirmed</span><h3>Airbnb · Room in KC</h3><p>2611 Belleview Avenue, Kansas City, MO 64108<br>Host: Kayla · 2 guests · $372.28 total<br>Confirmation: <b>HMTYZYMB4X</b><br><a href="https://www.airbnb.com/trips/v1/reservation-details/ro/RESERVATION2_CHECKIN/HMTYZYMB4X" style="color:var(--gold);font-weight:600">View reservation on Airbnb →</a></p></div>
-      <div class="card"><span class="tag">Check-In</span><h3>Sat Jul 11 · 3 PM</h3><p>Self check-in via keypad — door code and wifi details appear in the Airbnb app 48h before arrival. Checkout Mon Jul 13, 11 AM.</p></div>
-      <div class="card"><span class="tag">Arriving</span><h3>Parking &amp; Entry</h3><p>Belleview is one-way — enter via Summit St to 26th, pass the church, left on Belleview. Park across from the Casa Feliz center; second house on the left.</p></div>
-    </div>
-
-    <div class="mapbox">
-      <svg viewBox="0 0 900 440" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Schematic map of Kansas City weekend locations">
-        <rect width="900" height="440" fill="#fdfcfa"/>
-        <path d="M 250 100 C 380 150, 520 250, 730 320" stroke="#e5e0d8" stroke-width="10" fill="none" stroke-linecap="round"/>
-        <text x="480" y="205" font-family="IBM Plex Mono, monospace" font-size="12" fill="#6b645c" transform="rotate(21 480 205)">I-70 E · ~15 min</text>
-        <path d="M 240 95 L 232 130 L 221 167" stroke="#FFB81C" stroke-width="5" fill="none" stroke-linecap="round"/>
-        <text x="252" y="135" font-family="IBM Plex Mono, monospace" font-size="11" fill="#6b645c">streetcar (free)</text>
-        <path d="M 221 167 L 183 198" stroke="#1c1a17" stroke-width="2.5" stroke-dasharray="6 6" fill="none"/>
-        <text x="120" y="176" font-family="IBM Plex Mono, monospace" font-size="11" fill="#6b645c">12 min walk</text>
-
-        <circle cx="240" cy="95" r="9" fill="#fff" stroke="#1c1a17" stroke-width="3"/>
-        <text x="258" y="90" font-family="Libre Franklin, sans-serif" font-size="15" font-weight="700" fill="#1c1a17">Power &amp; Light</text>
-        <text x="258" y="107" font-family="IBM Plex Mono, monospace" font-size="11" fill="#6b645c">watch parties · nightlife</text>
-
-        <circle cx="221" cy="167" r="9" fill="#FFB81C" stroke="#1c1a17" stroke-width="3"/>
-        <text x="240" y="163" font-family="Libre Franklin, sans-serif" font-size="15" font-weight="700" fill="#1c1a17">Fan Festival</text>
-        <text x="240" y="180" font-family="IBM Plex Mono, monospace" font-size="11" fill="#6b645c">Union Station · WWI Museum lawn</text>
-
-        <circle cx="183" cy="198" r="11" fill="#C8102E" stroke="#1c1a17" stroke-width="3"/>
-        <text x="60" y="230" font-family="Libre Franklin, sans-serif" font-size="16" font-weight="700" fill="#C8102E">Your Airbnb</text>
-        <text x="60" y="247" font-family="IBM Plex Mono, monospace" font-size="11" fill="#6b645c">2611 Belleview Ave</text>
-
-        <circle cx="730" cy="320" r="12" fill="#C8102E" stroke="#1c1a17" stroke-width="3"/>
-        <circle cx="730" cy="320" r="22" fill="none" stroke="#C8102E" stroke-width="2" opacity=".4"/>
-        <text x="700" y="365" font-family="Libre Franklin, sans-serif" font-size="16" font-weight="700" fill="#1c1a17">Arrowhead</text>
-        <text x="668" y="382" font-family="IBM Plex Mono, monospace" font-size="11" fill="#6b645c">Match 100 · Sat 8 PM</text>
-
-        <text x="30" y="415" font-family="IBM Plex Mono, monospace" font-size="10" fill="#a39c92">schematic — not to scale · N ↑</text>
-      </svg>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <h2>Fan Festival &amp; Food</h2>
-    <div class="cards">
-      <div class="card"><span class="tag">Free</span><h3>FIFA Fan Festival</h3><p>South lawn of the National WWI Museum &amp; Memorial, overlooking the skyline — every match on big screens, concerts, food vendors. Free, but reserve a digital pass in advance. Right next to Union Station streetcar stop.</p></div>
-      <div class="card"><span class="tag">Non-Negotiable</span><h3>KC BBQ</h3><p>Joe's KC (the gas station original) for the Z-Man, Arthur Bryant's near the stadium for the old-school pilgrimage, Q39 for burnt ends done modern, Gates for the "HI, MAY I HELP YOU?" experience.</p></div>
-      <div class="card"><span class="tag">Pre-Match</span><h3>Boulevard &amp; Beyond</h3><p>Boulevard Brewing tours in the Crossroads, jazz at the Green Lady Lounge, and if you have a free morning — the WWI Museum itself is genuinely world-class.</p></div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <h2>Match Day Plan</h2>
-    <div class="timeline">
-      <div class="stop"><div class="t">11:00 AM</div><h4>BBQ Lunch</h4><p>Beat the lines at Joe's KC or Q39. You do not want a heavy meal at 6 PM in July heat.</p></div>
-      <div class="stop"><div class="t">1:00 PM</div><h4>Fan Festival</h4><p>Catch the early quarterfinal on the big screens at the WWI Museum lawn. Hydrate — KC in July runs 90°F+ and humid.</p></div>
-      <div class="stop"><div class="t">4:30 PM</div><h4>Head East</h4><p>Board the Stadium Direct bus or start the drive. Gates typically open ~3 hours before kickoff for knockout matches.</p></div>
-      <div class="stop"><div class="t">5:30 PM</div><h4>Arrowhead Lots</h4><p>Soak in the tailgate scene — the sports complex parking lots on a big match day are an event in themselves.</p></div>
-      <div class="stop"><div class="t">8:00 PM</div><h4>Kickoff — Match 100</h4><p>A World Cup semifinal spot on the line, in a stadium that once hit 142.2 decibels. Ears optional.</p></div>
-      <div class="stop"><div class="t">11:00 PM+</div><h4>The Exit</h4><p>Expect 60–90 min to clear the complex. Pre-book your ride back or take the bus, then celebrate (or mourn) at Power &amp; Light.</p></div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <h2>Sunday · Jul 12</h2>
-    <div class="cards">
-      <div class="card red"><span class="tag">10 AM – 5 PM</span><h3>National WWI Museum &amp; Memorial</h3><p>2 Memorial Drive — same grounds as the Fan Fest, 12 min walk from the Airbnb. World-class collection, and don't miss <b>The Beautiful Game</b>, their new exhibition on football and WWI, opened this April for the World Cup. Ride the Liberty Memorial tower for the best skyline view in KC.<br><a href="https://www.theworldwar.org/" style="color:var(--gold);font-weight:600">theworldwar.org →</a></p></div>
-    </div>
-  </div>
-</section>
-
-<div class="factbar">
-  <div class="wrap">
-    <div class="fact"><b>76,416</b><span>Stadium capacity</span></div>
-    <div class="fact"><b>142.2 dB</b><span>World record crowd noise</span></div>
-    <div class="fact"><b>90°F</b><span>Typical July high</span></div>
-    <div class="fact"><b>CT</b><span>1 hour behind NYC</span></div>
-  </div>
-</div>
 
 <footer>
-  <div class="wrap">wc_travels · built July 2026 · official info: <a href="https://kansascityfwc26.com">kansascityfwc26.com</a> · tickets: <a href="https://www.fifa.com/tickets">fifa.com/tickets</a></div>
+  <div class="wrap">wc_travels · built July 2026 · tickets: <a href="https://www.fifa.com/tickets">fifa.com/tickets</a></div>
 </footer>
 
 </body>
 </html>
-
